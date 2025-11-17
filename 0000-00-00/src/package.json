@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "slidev",
-    "build": "slidev build --out ../dist",
+	  "build": "tsx ../../scripts/build.ts /2025/test/",
     "export": "slidev export --per-slide --dark --output ../slides.pdf"
   },
   "dependencies": {
