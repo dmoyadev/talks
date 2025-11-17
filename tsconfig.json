@@ -1,13 +1,36 @@
 {
-  "compilerOptions": {
-    "target": "esnext",
-    "module": "esnext",
-    "moduleResolution": "node",
-    "allowImportingTsExtensions": true,
-    "noEmit": true,
-    "allowSyntheticDefaultImports": true
-  },
-  "exclude": [
-    "**/*.md"
-  ]
+	"compilerOptions": {
+		"target": "ESNext", // Target ECMAScript version
+		"useDefineForClassFields": true, // Enable class field declarations
+		"module": "ESNext", // Module system
+		"skipLibCheck": true, // Skip type checking of declaration files
+
+		/* Bundler mode */
+		"moduleResolution": "bundler", // Module resolution strategy
+		"allowImportingTsExtensions": true, // Allow importing TypeScript extensions
+		"allowSyntheticDefaultImports": true, // Allow default imports from modules with no default export
+		"resolveJsonModule": true, // Enable JSON module resolution
+		"isolatedModules": true, // Ensure module isolation
+		"noEmit": true, // Disable emitting output files (useful for non-library projects)
+		"jsx": "preserve", // JSX handling strategy
+
+		/* Linting */
+		"strict": true, // Enable strict type checking
+
+		/* Aliases */
+		"baseUrl": "./base"
+		// Base directory for module resolution
+	},
+
+	"include": [
+		"**/*.ts", // Include TypeScript source files
+		"**/*.d.ts", // Include TypeScript declaration files
+		"**/*.vue" // Include Vue.js source files
+	],
+
+	"exclude": [
+		"dist", // Exclude the 'dist' directory
+		"node_modules", // Exclude the 'node_modules' directory
+		"**/*.md" // Exclude markdown files
+	]
 }
