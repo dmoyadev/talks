@@ -4,12 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "slidev --open",
-	  "build": "tsx ../../scripts/build.ts /2025/test/",
+	  "build": "tsx ../../scripts/build.ts /2026/code-first-slides/",
     "export": "slidev export --per-slide --dark --output ../slides.pdf"
   },
   "dependencies": {
-    "@slidev/theme-seriph": "^0.25.0",
-    "seedrandom": "^3.0.5",
-    "vue": "^3.4.0"
+    "@slidev/theme-seriph": "0.25.0",
+    "seedrandom": "3.0.5",
+    "vue": "3.5.30"
   }
 }
